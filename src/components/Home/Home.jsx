@@ -1,7 +1,8 @@
 import Card from "../Card/Card";
 import { useDispatch, useSelector } from "react-redux";
 import { allAgents } from "../../redux/action";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
+import styles from "./Home.module.css";
 
 const Home = () => {
   const agents = useSelector((state) => state.allAgents);
@@ -12,8 +13,8 @@ const Home = () => {
   }, [dispatch]);
 
   return (
-    <div>
-      <div>
+    <div className={styles.container}>
+      <div className={styles.cardContainer}>
         {agents.map((e) => {
           return (
             <Card
@@ -21,6 +22,7 @@ const Home = () => {
               name={e.displayName}
               img={e.fullPortrait}
               role={e.role?.displayName}
+              description={e.description}
             />
           );
         })}

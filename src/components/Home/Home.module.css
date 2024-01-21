@@ -1,0 +1,14 @@
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .container{
+  
+    background-image: url("./logoValo.png");
+    background-position: center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: 100%
+  }

@@ -1,10 +1,12 @@
-const Card = ({ name, img, role }) => {
+import styles from "./Card.module.css";
+
+const Card = ({ name, img, role, description }) => {
   return (
-    <div>
+    <div className={styles.card}>
       <div>
         <img src={img} alt={name} />
       </div>
-      <div>
+      <div className={styles.text}>
         <h3>Name: {name}</h3>
         <h3>Role: {role} </h3>
       </div>
