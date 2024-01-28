@@ -1,39 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
-  .card {
-    background-color: #FF4655;  /* Color de fondo oscuro */
-    border-radius: 10px;
-    margin: 10px;
-    overflow: hidden;
-    width: 250px;  /* Ancho de la tarjeta */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: flex;
-    ;
-  }
+.card {
+  display: flex;
+  justify-content: center;
+  background-color: #FF4655;
+  border-radius: 10px;
+  margin: 10px;
+  overflow: hidden;
+  width: 370px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s; /* Agrega transición para el efecto de volteo */
+}
+
+
+
+.card .img {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  transition: transform 0.5s; /* Agrega transición para el efecto de volteo */
+}
+
+
+
+
+.text{
+  margin-right: 10px;
+  font-family: 'Permanent Marker', cursive;
+  color: white;
+  font-size: 1.5rem;
+
+}
+
+
+ 
+
   
-  .card img {
-    width: 100%;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-  }
   
-  .card h3 {
-    color: #ecf0f1;  /* Color del texto blanco */
-    margin: 10px 0;
-  }
   
-  .card h3:first-child {
-    margin-top: 20px;  /* Ajusta el margen superior del primer título */
-  }
-  
-  .card h3::after {
-    display: block;
-    width: 30px;
-    height: 2px;
-    background-color: #3498db;  /* Color azul claro */
-    margin: 8px 0;
-  }
-  
-  /* Otros estilos adicionales según tu preferencia */
-  .text{
-    margin-right: 10px;
-  }

@@ -4,7 +4,7 @@ const Card = ({ name, img, role, description }) => {
   return (
     <div className={styles.card}>
       <div>
-        <img src={img} alt={name} />
+        <img src={img} alt={name} className={styles.img} />
       </div>
       <div className={styles.text}>
         <h3>Name: {name}</h3>
